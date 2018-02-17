@@ -1,14 +1,26 @@
-<html>
-<head>
+//class
+/*http://azurs.web.fc2.com/
+table縦横入れ替え！
+テーブル作成function
+縦書き
+if文でaタグを含むものと含まない罰を出力する
+時間はデフォルトでセット
+*/
+class table{
+  private function status($str){//評価するクラス
+    switch($str){
+      case 0: print("×");
+      case 1: print("<a href=\"confirmation.php\">△</a>");
+      case 2: print("<a href=\"confirmation.php\">○</a>");
+    }
+  }
+  
+  private function out(){
+    for( $i=0 ; $i<$max ; $i++){
+      foreach($teacher as $row){
+        select day,teacher_id,time,student_id from reservation where day=today()+\"$day\" AND teacher_id=\"$teacher_id\" Desc time;
+      }
+    }
+  }
+}
 
-</head>
-<body>
-
-<php? static $dbh = PDO();?>
-
-<table>
-<php?  ?>
-</table>
-
-</body>
-</html>
